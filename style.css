@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+}
+
+.card{
+    width: 470px;
+    margin: 20px auto 0;
+    padding: 40px 35px;
+    background: linear-gradient(135deg,#5b548a,#00bafe);
+    color: white;
+    border-radius: 20px; 
+    text-align: center;
+}
+
+.heading{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.heading h3{
+    margin-top: 5px;
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search input{
+    width: 300px;
+    height: 60px;
+    margin-right: 16px;
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+    background: #ebfffc;
+    color: #555;
+    border-radius: 30px;
+    font-size: 18px;
+}
+
+.search button{
+    width: 60px;
+    height: 60px;
+    border: none;
+    outline: none;
+    background: #ebfffc; 
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.search button i{
+    font-size: 20px;
+}
+
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather .condition{
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.weather .temperatures{
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather h1{
+    font-size: 70px;
+    font-weight: 500;
+}
+
+.weather h2{
+    margin-top: 5px;
+    font-size: 45px;
+    font-weight: 400;   
+}
+
+.weather .hr-line{
+    height: 70px;
+    border-left: 5px solid white;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img{
+    width: 50px;
+    margin-right: 5px;
+}
+
+.humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.weather{
+    display: none;
+}
+
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 767px){
+    .card{
+        width: 90%;  
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .heading{
+        font-size: 18px;
+    }
+
+    .search input{
+        width: 230px; 
+        height: 50px;
+    }
+
+    .search button{
+        width: 50px;
+        height: 50px;
+    }
+
+    .weather-icon{
+        width: 150px;
+    } 
+    
+    .weather h1{
+        font-size: 50px;
+    }
+    
+    .weather h2{
+        font-size: 35px;
+    }
+
+    .weather .hr-line{
+        height: 50px;
+    }
+
+    .col img{
+        width: 40px;
+    }
+
+    .humidity, .wind{
+        font-size: 18px;
+    }
+}
